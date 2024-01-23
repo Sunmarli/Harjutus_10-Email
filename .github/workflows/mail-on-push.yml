@@ -1,16 +1,22 @@
-﻿on: [push]
+﻿name: Send Email
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  mail-on-push:
+  send-email:
     runs-on: ubuntu-latest
     steps:
-        - name: Send mail
-          uses: dawidd6/action-send-mail@v3
-          with:
-            server_address: smtp.gmail.com
-            server_port: 465
-            username: ${{secrets.MAIL_USERNAME}}
-            password: ${{secrets.MAIL_PASSWORD}}
-            subject: NIGERIAN PRINCE WISHES YOU A MERRY CHRISTMAS
-            body:  ${{github.repository}}. which is owned by${{github.event.pusher.name}}.
-            to: mjum473@gmail.com
-            from: mjum473@gmail.com
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: NIGERIAN PRINCE WISHES YOU A MERRY CHRISTMAS
+          body: Sunmarli/Harjutus_10-Email. which is owned by Sunmarli.
+          to: ${{ secrets.mjum473@gmail.com }}
+          from: ${{ secrets.mjum473@gmail.com }}
