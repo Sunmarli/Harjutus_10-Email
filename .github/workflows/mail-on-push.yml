@@ -18,5 +18,5 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: NIGERIAN PRINCE WISHES YOU A MERRY CHRISTMAS
           body: Sunmarli/Harjutus_10-Email. which is owned by Sunmarli.
-          to: ${{ secrets.mjum473@gmail.com }}
-          from: ${{ secrets.mjum473@gmail.com }}
+          to:  mjum473@gmail.com
+          from: mjum473@gmail.com
