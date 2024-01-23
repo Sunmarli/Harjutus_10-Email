@@ -14,8 +14,8 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          username: ${{secrets.mjum473@gmail.com}}
+          password: ${{secrets.nxpq fwby micw zwf}}
           subject: NIGERIAN PRINCE WISHES YOU A MERRY CHRISTMAS
           body: Sunmarli/Harjutus_10-Email. which is owned by Sunmarli.
           to:  mjum473@gmail.com
