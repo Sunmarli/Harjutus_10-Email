@@ -8,8 +8,8 @@ jobs:
           with:
             server_address: smtp.gmail.com
             server_port: 465
-            username: ${{maria.MAIL_USERNAME}}
-            password: ${{Krokodiil.MAIL_PASSWORD}}
+            username: ${{secrets.MAIL_USERNAME}}
+            password: ${{secrets.MAIL_PASSWORD}}
             subject: NIGERIAN PRINCE WISHES YOU A MERRY CHRISTMAS
             body: Testing emaili saatmine  ${{github.repository}}. which is owned by${{github.event.pusher.name}}.
             to: mjum473@gmail.com
