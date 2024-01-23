@@ -11,7 +11,7 @@ jobs:
             username: ${{secrets.MAIL_USERNAME}}
             password: ${{secrets.MAIL_PASSWORD}}
             subject: NIGERIAN PRINCE WISHES YOU A MERRY CHRISTMAS
-            body: Testing emaili saatmine  ${{github.repository}}. which is owned by${{github.event.pusher.name}}.
+            body: Testing emaili saatmineee  ${{github.repository}}. which is owned by${{github.event.pusher.name}}.
             to: mjum473@gmail.com
             from: Github Actions
   
